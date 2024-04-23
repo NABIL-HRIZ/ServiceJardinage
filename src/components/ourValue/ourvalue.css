@@ -1,0 +1,98 @@
+.main_ourValue {
+    padding: 20px 50px;
+}
+
+.main_ourValue h3 {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.main_ourValue .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.main_ourValue .container .left_ov {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.main_ourValue .container .left_ov .value {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 2px 2px 5px green;
+}
+
+.main_ourValue .container .left_ov .value>span {
+    font-size: 40px;
+    color: green;
+}
+
+.main_ourValue .container .left_ov .value>h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main_ourValue .container .right_ov>img {
+    width: 400px;
+    height: 600px;
+}
+
+/* Styles for screens smaller than 768px (typical mobile devices) */
+@media screen and (max-width: 768px) {
+    .main_ourValue {
+        padding: 15px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .main_ourValue h3 {
+        font-size: 30px;
+        /* Decrease font size for smaller screens */
+    }
+
+    .main_ourValue .container {
+        flex-direction: column;
+        /* Stack elements vertically on smaller screens */
+        align-items: center;
+        /* Center elements vertically on smaller screens */
+    }
+
+    .main_ourValue .container .left_ov {
+        grid-template-columns: repeat(1, 1fr);
+        /* Display one column on smaller screens */
+        gap: 15px;
+        /* Adjust gap between grid items for smaller screens */
+    }
+
+    .main_ourValue .container .left_ov .value {
+        border-radius: 20px;
+        /* Adjust border radius for smaller screens */
+        box-shadow: 2px 2px 5px green;
+        /* Adjust box shadow for smaller screens */
+    }
+
+    .main_ourValue .container .left_ov .value>span {
+        font-size: 30px;
+        /* Decrease font size for smaller screens */
+    }
+
+    .main_ourValue .container .left_ov .value>h4 {
+        font-size: 18px;
+        /* Decrease font size for smaller screens */
+    }
+
+    .main_ourValue .container .right_ov>img {
+        width: 100%;
+        /* Make the image full width on smaller screens */
+        height: auto;
+        /* Maintain aspect ratio on smaller screens */
+        max-width: 300px;
+        /* Limit maximum width for smaller screens */
+    }
+}

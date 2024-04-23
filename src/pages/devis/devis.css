@@ -1,0 +1,46 @@
+.devis_section {
+    padding: 30px;
+}
+
+.devis_container h2 {
+    font-size: 60px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.devis_container h3 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(182, 180, 180);
+}
+
+.devis_form {
+    background-image: url(../../assets/back_devis.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+    transition: .4s ease-in-out;
+}
+
+.devis_form:hover {
+    opacity: 1;
+
+}
+
+@media (max-width:768px) {
+    .devis_container h2 {
+        font-size: 40px;
+
+    }
+
+    .devis_container h3 {
+        font-size: 20px;
+        text-align: center;
+        color: rgb(182, 180, 180);
+    }
+}

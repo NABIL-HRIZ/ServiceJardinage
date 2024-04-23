@@ -1,0 +1,119 @@
+.main_services {
+    padding: 20px 50px;
+    background: linear-gradient(45deg, green, white);
+}
+
+.main_services h3 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+
+}
+
+.main_services .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.main_services .container .services_list {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.main_services .container .services_list>span {
+    color: #dbdbdb;
+    font-size: 40px;
+}
+
+.main_services .container .services_list>h5 {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.main_services .container .services_list>p {
+    color: #f4f3f3;
+    font-size: 18px;
+    font-family: 200;
+    margin-top: -5px;
+}
+
+.main_services .container .services_list>button {
+    padding: 15px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    color: #dbdbdb;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.main_services .container .services_list>button:hover {
+    background-color: #8B4513;
+
+}
+
+/* Styles for screens smaller than 768px (typical mobile devices) */
+@media screen and (max-width: 768px) {
+    .main_services {
+        padding: 15px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .main_services h3 {
+        font-size: 30px;
+        /* Decrease font size for smaller screens */
+        margin-bottom: 20px;
+        /* Adjust margin for smaller screens */
+    }
+
+    .main_services .container {
+        grid-template-columns: repeat(1, 1fr);
+        /* Display two columns on smaller screens */
+        gap: 15px;
+        /* Adjust gap between grid items for smaller screens */
+    }
+
+    .main_services .container .services_list {
+        padding: 15px;
+        /* Adjust padding for smaller screens */
+        border-radius: 20px;
+        /* Adjust border radius for smaller screens */
+    }
+
+    .main_services .container .services_list>span {
+        font-size: 30px;
+        /* Decrease font size for smaller screens */
+    }
+
+    .main_services .container .services_list>h5 {
+        font-size: 18px;
+        /* Decrease font size for smaller screens */
+    }
+
+    .main_services .container .services_list>p {
+        font-size: 16px;
+        /* Decrease font size for smaller screens */
+    }
+
+    .main_services .container .services_list>button {
+        padding: 12px;
+        /* Adjust padding for smaller screens */
+        font-size: 14px;
+        /* Decrease font size for smaller screens */
+        width: 50%;
+        /* Make button full width on smaller screens */
+    }
+}

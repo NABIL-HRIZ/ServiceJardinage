@@ -1,0 +1,48 @@
+.main_ourFaq {
+    padding: 20px 50px;
+    background: linear-gradient(10deg, green, white);
+
+}
+
+.main_ourFaq h3 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.main_ourFaq .container {
+    width: 80%;
+    margin-top: 30px;
+}
+
+.accordion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+/* Styles for screens smaller than 768px (typical mobile devices) */
+@media screen and (max-width: 768px) {
+    .main_ourFaq {
+        padding: 15px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .main_ourFaq h3 {
+        font-size: 30px;
+        /* Decrease font size for smaller screens */
+    }
+
+    .main_ourFaq .container {
+        width: 100%;
+        /* Make the container full width on smaller screens */
+        margin-top: 20px;
+        /* Adjust margin for smaller screens */
+    }
+
+    .accordion {
+        grid-template-columns: repeat(1, 1fr);
+        /* Display one column on smaller screens */
+        gap: 30px;
+        /* Adjust gap between items for smaller screens */
+    }
+}
