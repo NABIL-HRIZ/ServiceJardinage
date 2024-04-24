@@ -1,8 +1,8 @@
 {
-  "homepage": "https://NABIL-HRIZ.github.io/Service/",
+  "homepage": "https://NABIL-HRIZ.github.io/ServiceJardinage",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NABIL-HRIZ/Service.git"
+    "url": "git+https://github.com/NABIL-HRIZ/ServiceJardinage.git"
   },
   "name": "front_end",
   "version": "0.1.0",
